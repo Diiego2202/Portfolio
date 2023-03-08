@@ -2,7 +2,7 @@ import { createRouter, createWebHistory} from 'vue-router';
 import Home from './views/Home.vue';
 import Sobre from './views/Sobre.vue';
 
-const routes = {
+const routes = [
     {
         path: '/',
         name: 'Home',
@@ -13,7 +13,7 @@ const routes = {
         name: 'Sobre',
         component: Sobre
     }
-};
+];
 
 const router = createRouter({
     history: createWebHistory(),
