@@ -1,15 +1,6 @@
 <template>
   <NavBar />
-  <div class="flex flex-row">
-    <div class="basis-1/2">
-      <h1>Oi, Eu sou o Diego</h1>
-      <h3>Estudante de Sistemas de informação</h3>
-      <button class="bg-purple-700 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-full">Sobre</button>
-    </div>
-    <div class="basis-1/2">
-      <img class="rounded-full" src="../public/verde.jpg" alt="verde">
-    </div>
-  </div>
+  <router-View></router-View>
 
 </template>
 
@@ -20,28 +11,6 @@ export default {
   name: 'App',
   components: {
     NavBar
-  },
-  data() {
-    return {
-      condi: '3',
-      nome: 'Gustavo',
-      testes: [
-        {
-          nome: 'Diego',
-          idade: 21
-        }
-      ]
-    }
-  },
-  methods: {
-    minhafunc() {
-      this.nome = 'Gustavo2'
-    }
-  },
-  watch: {
-    condi() {
-      console.log('oi')
-    }
   }
 }
 </script>
