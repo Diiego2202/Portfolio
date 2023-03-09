@@ -4,17 +4,11 @@
   </template>
   
 <script>
-    import NavBar from './components/NavBar.vue'
 
-    export default {
+  export default {
     name: 'Sobre',
     components: {
-        NavBar
-    },
-    data() {
-        return {
-
-        }
+      
     }
-    }
+  }
 </script>
